@@ -40,7 +40,7 @@ AppAsset::register($this);
         echo Nav::widget([
             'options' => ['class' => 'navbar-nav navbar-right'],
             'items' => [
-                ['label' => 'Home', 'url' => ['/site/index']],
+                ['label' => 'Main', 'url' => ['/site/index']],
                 ['label' => 'Authors', 'url' => ['/site/authors']],
                 ['label' => 'Register', 'url' => ['/site/signup']],
                 ['label' => 'Login', 'url' => ['/site/login']]
@@ -51,7 +51,7 @@ AppAsset::register($this);
         echo Nav::widget([
             'options' => ['class' => 'navbar-nav navbar-right'],
             'items' => [
-                ['label' => 'Home', 'url' => ['/site/index']],
+                ['label' => 'Main', 'url' => ['/site/index']],
                 ['label' => 'Users', 'url' => ['/site/index']],
                 ['label' => 'Categories', 'url' => ['/tag/index']],
                 ['label' => 'Authors', 'url' => ['/site/authors']],
@@ -69,10 +69,9 @@ AppAsset::register($this);
         echo Nav::widget([
             'options' => ['class' => 'navbar-nav navbar-right'],
             'items' => [
-                ['label' => 'Home', 'url' => ['/site/index']],
+                ['label' => 'Main', 'url' => ['/site/index']],
                 ['label' => 'Add Post', 'url' => ['/post/create']],
                 ['label' => 'My Posts', 'url' => ['/site/my-posts']],
-                ['label' => 'Comments', 'url' => ['/site/index']],
                 ['label' => 'Authors', 'url' => ['/site/authors']],
                 '<li>'
                 . Html::beginForm(['/site/logout'], 'post')
@@ -85,7 +84,6 @@ AppAsset::register($this);
             ],
         ]);
     }
-
     NavBar::end();
     ?>
 

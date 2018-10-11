@@ -4,36 +4,14 @@ namespace app\models;
 
 use Yii;
 
-/**
- * This is the model class for table "post".
- *
- * @property int $id
- * @property string $title
- * @property string $image
- * @property string $text
- * @property int $id_tag
- * @property int $status
- * @property string $create_time
- * @property string $update_time
- * @property int $id_user
- *
- * @property Comment[] $comments
- * @property User $user
- * @property Tag $tag
- */
 class Post extends \yii\db\ActiveRecord
 {
-    /**
-     * {@inheritdoc}
-     */
+
     public static function tableName()
     {
         return 'post';
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function rules()
     {
         return [
@@ -44,9 +22,6 @@ class Post extends \yii\db\ActiveRecord
         ];
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function attributeLabels()
     {
         return [
@@ -94,9 +69,9 @@ class Post extends \yii\db\ActiveRecord
 
     public function getImage(){
         if($this->image!=''){
-            return 'D:/Programm/OpenServer/OSPanel/domains/Commandwork' . Yii::getAlias('@web') . '/uploads/' . $this->image;
+            return Yii::getAlias('@app') . '/web/uploads/' . $this->image;
         }
-        return 'D:/Programm/OpenServer/OSPanel/domains/Commandwork' . Yii::getAlias('@web') . '/uploads/no_image.jpg';
+        return Yii::getAlias('@app') . '/web/uploads/no_image.jpg';
     }
 
     public function saveTag($tag)
@@ -111,4 +86,7 @@ class Post extends \yii\db\ActiveRecord
         return $this->save(false);
     }
 
+    public function getCount(){
+        return LikePost::find()->where(['id_post'=>$this->id])->count();
+    }
 }

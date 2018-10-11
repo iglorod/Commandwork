@@ -39,9 +39,17 @@ $this->params['breadcrumbs'][] = $this->title;
 					<div>' . $model->create_time . '</div>
 					<div>' . $model->update_time . '</div>
 					<div>' . $model->user->login . '</div>
-					<br><hr>
+					<br>
         ';
     ?>
+
+    <?php
+    if(Yii::$app->user->isGuest){
+        echo '<a href="index.php?r=site/login"><button type="button" class="btn btn-default">Like '. $model->count .'</button></a><hr>';
+    }else {
+        echo '<button type="button" class="btn btn-default like_post" post="' . $model->id . '">Like '. $model->count .'</button><hr>';
+    }?>
+
     <?php $form = ActiveForm::begin(); ?>
     <?= $form->field($model_comment, 'content')->textarea(['rows' => 6,'id'=>'com_cont']) ?>
 
@@ -83,6 +91,15 @@ $this->params['breadcrumbs'][] = $this->title;
           });
         });
 
+        $(".like_post").click(function(){
+            var id_post = {
+                'id':$(this).attr('post')
+            };
+
+            $.post('index.php?r=post/like-post',id_post,function(data){
+                $(".like_post").text('Like'+data);
+            });
+        });
 
         $(".comments").click(function(){
             var b=document.getElementById('com_cont');

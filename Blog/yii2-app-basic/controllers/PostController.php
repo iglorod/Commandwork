@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\models\Comment;
 use app\models\ImageUpload;
+use app\models\LikePost;
 use app\models\Tag;
 use app\models\Likes;
 use app\models\User;
@@ -37,10 +38,6 @@ class PostController extends Controller
         ];
     }
 
-    /**
-     * Lists all Post models.
-     * @return mixed
-     */
     public function actionIndex()
     {
         $searchModel = new PostSearch();
@@ -52,18 +49,11 @@ class PostController extends Controller
         ]);
     }
 
-    /**
-     * Displays a single Post model.
-     * @param integer $id
-     * @return mixed
-     * @throws NotFoundHttpException if the model cannot be found
-     */
     public function actionView($id)
     {
         $model_comment=new Comment();
         $model=$this->findModel($id);
         $comments=Comment::findAll(['id_post' => $id]);
-
 
         if(Yii::$app->user->identity->id!=$model->id_user) {    //щоб сам собі кількість переглядів не накручував
             $views = $model->status;
@@ -77,13 +67,31 @@ class PostController extends Controller
         ]);
     }
 
+    public function actionLikePost(){
+        $id=Yii::$app->request->post('id');
+        $likes=LikePost::findOne([
+            'id_post' => $id,
+            'id_user'=>Yii::$app->user->identity->id,
+        ]);
+
+        if($likes==null){   //якщо лайк не існує, то створимо його
+            $likes=new LikePost();
+            $likes->id_user=Yii::$app->user->identity->id;
+            $likes->id_post=$id;
+            $likes->save(true);
+        }else{                 //якщо існує - видалимо
+            $likes->deleteLike();
+        }
+
+        echo $likes->getCount($id);die();
+    }
+
     public function actionLike(){
         $id=Yii::$app->request->post('id');
         $likes=Likes::findOne([
             'id_comment' => $id,
             'id_user'=>Yii::$app->user->identity->id,
         ]);
-
 
         if($likes==null){   //якщо лайк не існує, то створимо його
             $likes=new Likes();
@@ -95,21 +103,20 @@ class PostController extends Controller
         }
 
         echo $likes->getCount($id);die();
-        //$likes->comment->id_post;
-        //$model=$this->findModel($likes->comment->id_post);
-        //$comments=Comment::findAll(['id_post' => $likes->comment->id_post]);
-        //return $this->render('view',['model' => $model, 'comments'=>$comments]);
     }
 
     public function actionComment(){
         $id=Yii::$app->request->post('id');
         $contant=Yii::$app->request->post('contant');
+
         $comment=new Comment();
         $comment->content=$contant;
         $comment->id_author=Yii::$app->user->identity->id;
         $comment->id_post=$id;
         $comment->save(true);
+
         $comments=Comment::findAll(['id_post' => $comment->id_post]);
+
         $model_comment=new Comment();
         $model=Post::findOne([
             'id' => $comment->id_post,
@@ -117,15 +124,8 @@ class PostController extends Controller
 
         Yii::$app->controller->redirect('index.php?r=post/view&id='.$id.'', array('model' => $model,'comments'=>$comments,
             'model_comment'=>$model_comment) );
-
     }
 
-
-    /**
-     * Creates a new Post model.
-     * If creation is successful, the browser will be redirected to the 'view' page.
-     * @return mixed
-     */
     public function actionCreate()
     {
         $model = new Post();    //створюємо новий пост
@@ -145,7 +145,6 @@ class PostController extends Controller
                 return $this->redirect(['view', 'id' => $model->id, 'model_comment'=>$model_comment,]);
             }
         }
-
 
         return $this->render('create', [
             'model' => $model,
@@ -180,29 +179,15 @@ class PostController extends Controller
         ]);
     }
 
-    /**
-     * Deletes an existing Post model.
-     * If deletion is successful, the browser will be redirected to the 'index' page.
-     * @param integer $id
-     * @return mixed
-     * @throws NotFoundHttpException if the model cannot be found
-     */
     public function actionDelete($id)
     {
-        if (file_exists('D:/Programm/OpenServer/OSPanel/domains/Commandwork' . Yii::getAlias('@web') . '/uploads/' . $this->findModel($id)->image)) {
-            unlink('D:/Programm/OpenServer/OSPanel/domains/Commandwork' . Yii::getAlias('@web') . '/uploads/' . $this->findModel($id)->image);
+        if (file_exists(Yii::getAlias('@app') . '/web/uploads/' . $this->findModel($id)->image)) {
+            unlink(Yii::getAlias('@app') . '/web/uploads/' . $this->findModel($id)->image);
         }
         $this->findModel($id)->delete();
         return $this->goHome();
     }
 
-    /**
-     * Finds the Post model based on its primary key value.
-     * If the model is not found, a 404 HTTP exception will be thrown.
-     * @param integer $id
-     * @return Post the loaded model
-     * @throws NotFoundHttpException if the model cannot be found
-     */
     protected function findModel($id)
     {
         if (($model = Post::findOne($id)) !== null) {
@@ -220,7 +205,6 @@ class PostController extends Controller
             $article = $this->findModel($id);
             $file = UploadedFile::getInstance($model,'image');
 
-
             if($article->saveImage( $model->uploadFile($file,$article->image))){
                 return $this->redirect(['view','id'=>$article->id]);
             }
@@ -228,7 +212,7 @@ class PostController extends Controller
         return $this->render('image', ['model'=>$model]);
     }
 
-    public function actionSetCategory($id){
+   /* public function actionSetCategory($id){
        $article=$this->findModel($id);
        $selectedTag=$article->tag->id;
        $tags=ArrayHelper::map(Tag::find()->all(),'id','name');
@@ -240,7 +224,6 @@ class PostController extends Controller
            }
        }
 
-
        return $this->render('tag',['article'=>$article,'selectedTag'=>$selectedTag,'tags'=>$tags]);
-    }
+    }*/
 }
