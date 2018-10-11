@@ -28,7 +28,7 @@ echo '</ul>';
         echo '
                     <a href="index.php?r=post/view&id='.$posts[$x]->id.'"><li><b>' . (($number_of_post++) + 1) . ' post</b></li></a>
 					<li>' . $posts[$x]->title . '</li>
-					<li><img src="/Blog/yii2-app-basic/web/uploads/' . $posts[$x]->image . '" width="200"></li>
+					<li><img src="'.Yii::getAlias('@web').'/uploads/' . $posts[$x]->image . '" width="200"></li>
 					<li>' . $posts[$x]->text . '</li>
 					<li>' . $posts[$x]->status . ' (переглядів)</li>
 					<li>' . $posts[$x]->tag->name . '</li>
