@@ -18,7 +18,7 @@ class TagSearch extends Tag
     public function rules()
     {
         return [
-            [['id', 'frequency'], 'integer'],
+            [['id'], 'integer'],
             [['name'], 'safe'],
         ];
     }
@@ -60,7 +60,6 @@ class TagSearch extends Tag
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'frequency' => $this->frequency,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name]);

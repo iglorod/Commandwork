@@ -12,7 +12,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="post-view">
 
-    <?php if(Yii::$app->user->identity->id===$model->id_user) {
+    <?php if(Yii::$app->user->identity->id===$model->id_user || Yii::$app->user->identity->admin===1) {
 
         echo '<p>';
         ?>

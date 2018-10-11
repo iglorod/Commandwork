@@ -165,7 +165,12 @@ class PostController extends Controller
         if (Yii::$app->request->isPost) {
             $model->attributes = Yii::$app->request->post('Post');
             $model->id_tag=Yii::$app->request->post('id_tag');
-            $model->update_time=date('d-m-Y, h:i:s');
+            if(Yii::$app->user->identity->admin===1) {
+                $model->update_time = date('d-m-Y, h:i:s') . ' (admin)';
+            }else{
+                $model->update_time = date('d-m-Y, h:i:s');
+            }
+
             if($model->save()) {
                 return $this->redirect(['view', 'id' => $model->id]);
             }

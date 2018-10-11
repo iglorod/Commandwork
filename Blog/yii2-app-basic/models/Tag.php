@@ -9,7 +9,6 @@ use Yii;
  *
  * @property int $id
  * @property string $name
- * @property int $frequency
  *
  * @property Post[] $posts
  */
@@ -29,8 +28,7 @@ class Tag extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'frequency'], 'required'],
-            [['frequency'], 'integer'],
+            [['name'], 'required'],
             [['name'], 'string', 'max' => 512],
         ];
     }
@@ -43,7 +41,6 @@ class Tag extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'name' => 'Name',
-            'frequency' => 'Frequency',
         ];
     }
 
@@ -59,5 +56,4 @@ class Tag extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Post::className(), ['id_tag' => 'id'])->count();
     }
-
 }

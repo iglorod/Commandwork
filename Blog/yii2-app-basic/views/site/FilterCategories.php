@@ -5,9 +5,10 @@ $this->title = 'Category Search';
 <?php
 use yii\helpers\Html;
 ?>
-<?= Html::a('Новинки', ['site/index'], ['class' => 'btn btn-warning']) ?>
+<?= Html::a('Всі пости', ['site/index'], ['class' => 'btn btn-warning']) ?>
 <?= Html::a('Популярні пости', ['site/sort-popular'], ['class' => 'btn btn-warning']) ?>
 
+    <h3>Категорії</h3>
 <?php
 echo '<ul>';
 for($x=0;$x<$tag_count;$x++){   //аналогічна шапка, як і у index.php
