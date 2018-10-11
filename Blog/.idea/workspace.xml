@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b3736f6a-a753-47c0-904d-76a470b92035" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2-app-basic/controllers/PostController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2-app-basic/models/ImageUpload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2-app-basic/models/Likes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2-app-basic/models/Login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2-app-basic/models/Signup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2-app-basic/views/post/image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2-app-basic/views/post/tag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2-app-basic/views/site/FilterCategories.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2-app-basic/views/site/SortPopular.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2-app-basic/views/site/authors.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2-app-basic/views/site/myposts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2-app-basic/views/site/signup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2-app-basic/web/funct.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii2-app-basic/web/uploads/no_image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii2-app-basic/config/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii2-app-basic/config/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii2-app-basic/controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii2-app-basic/controllers/SiteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii2-app-basic/models/ContactForm.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii2-app-basic/models/LoginForm.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii2-app-basic/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii2-app-basic/models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii2-app-basic/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii2-app-basic/views/layouts/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii2-app-basic/views/site/about.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii2-app-basic/views/site/contact.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii2-app-basic/views/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii2-app-basic/views/site/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii2-app-basic/views/site/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii2-app-basic/views/site/login.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/yii2-app-basic/composer.json</pharConfigPath>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1489552389">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-586863160">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="62" />
+          <entry key="project.open.time.10" value="3" />
+          <entry key="project.open.time.11" value="7" />
+          <entry key="project.open.time.12" value="5" />
+          <entry key="project.open.time.13" value="15" />
+          <entry key="project.open.time.14" value="8" />
+          <entry key="project.open.time.15" value="7" />
+          <entry key="project.open.time.16" value="2" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.28" value="2" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="62" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="json" value="1" />
+          <entry key="php" value="148" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JSON" value="1" />
+          <entry key="PHP" value="148" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="php" value="17505" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="64" />
+          <entry key="PHP" value="17441" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/post/view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="88" column="32" lean-forward="true" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
+              <folding>
+                <element signature="e#7#28#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yii2-app-basic/controllers/PostController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+              <folding>
+                <element signature="e#35#58#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yii2-app-basic/models/Likes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+              <folding>
+                <element signature="e#30#38#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yii2-app-basic/models/Post.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1581">
+              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/comment/_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yii2-app-basic/models/Comment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yii2-app-basic/controllers/CommentController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/comment/view.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/post/update.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yii2-app-basic/models/Tag.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1003">
+              <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>view</find>
+      <find>delete</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/yii2-app-basic/controllers/AuthController.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/config/db.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/models/Login.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/config/web.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/models/Signup.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/controllers/TagController.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/models/User.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/models/PostSearch.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/views/post/_search.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/views/post/index.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/views/post/image.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/views/post/category.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/views/post/tag.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/models/ImageUpload.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/views/site/SortNew.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/views/site/index.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/views/post/_form.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/views/site/login.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/views/site/signup.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/views/site/SortPopular.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/views/site/authors.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/views/site/FilterCategories.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/views/site/my.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/models/Tag.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/views/site/myposts.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/views/post/update.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/models/Post.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/web/function.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/function.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/models/function.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/web/funct.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/views/post/create.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/views/post/view.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/controllers/PostController.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/models/Likes.php" />
+        <option value="$PROJECT_DIR$/yii2-app-basic/models/Comment.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/codeception/specify" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/codeception/stub" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/codeception/verify" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/codeception/base" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/behat/gherkin" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpspec/php-diff" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/bower-asset/yii2-pjax" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/bower-asset/typeahead.js" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/yiisoft/yii2" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/bower-asset/punycode" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/cebe/markdown" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/yiisoft/yii2-bootstrap" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/yiisoft/yii2-faker" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/bower-asset/jquery" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/yiisoft/yii2-composer" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/yiisoft/yii2-debug" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/bower-asset/inputmask" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/yiisoft/yii2-gii" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/yiisoft/yii2-swiftmailer" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/bower-asset/bootstrap" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/composer" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/codeception/phpunit-wrapper" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phar-io/manifest" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="yii2-app-basic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="yii2-app-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="yii2-app-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="yii2-app-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="yii2-app-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="comment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="yii2-app-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="yii2-app-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="post" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="yii2-app-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="yii2-app-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="yii2-app-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programm\OpenServer\OSPanel\domains\Commandwork\Blog\yii2-app-basic\models" />
+      <recent name="D:\Programm\OpenServer\OSPanel\domains\Commandwork\Blog\yii2-app-basic\web\uploads" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programm\OpenServer\OSPanel\domains\Commandwork\Blog\yii2-app-basic\models" />
+      <recent name="D:\Programm\OpenServer\OSPanel\domains\Commandwork\Blog\yii2-app-basic" />
+      <recent name="D:\Programm\OpenServer\OSPanel\domains\Commandwork\Blog\yii2-app-basic\views\comment" />
+      <recent name="D:\Programm\OpenServer\OSPanel\domains\Commandwork\Blog\yii2-app-basic\views\tag" />
+      <recent name="D:\Programm\OpenServer\OSPanel\domains\Commandwork\Blog\yii2-app-basic\views\post" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b3736f6a-a753-47c0-904d-76a470b92035" name="Default Changelist" comment="" />
+      <created>1538744011772</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1538744011772</updated>
+      <workItem from="1538744012987" duration="651000" />
+      <workItem from="1538754601531" duration="7798000" />
+      <workItem from="1538827906630" duration="1432000" />
+      <workItem from="1538850642227" duration="4000" />
+      <workItem from="1538850792773" duration="721000" />
+      <workItem from="1538893841036" duration="1751000" />
+      <workItem from="1538895638399" duration="2257000" />
+      <workItem from="1538898645931" duration="1775000" />
+      <workItem from="1538900479724" duration="1784000" />
+      <workItem from="1538902403291" duration="1848000" />
+      <workItem from="1538904303546" duration="2236000" />
+      <workItem from="1538906984643" duration="1785000" />
+      <workItem from="1538909031267" duration="1776000" />
+      <workItem from="1538910873242" duration="1781000" />
+      <workItem from="1538912699746" duration="1783000" />
+      <workItem from="1538914615848" duration="1793000" />
+      <workItem from="1538916467432" duration="1779000" />
+      <workItem from="1538918303327" duration="1928000" />
+      <workItem from="1538920296450" duration="1723000" />
+      <workItem from="1538930556279" duration="1840000" />
+      <workItem from="1538932448650" duration="1782000" />
+      <workItem from="1538934272987" duration="1355000" />
+      <workItem from="1538936952014" duration="1775000" />
+      <workItem from="1538938776663" duration="1783000" />
+      <workItem from="1538940606205" duration="1782000" />
+      <workItem from="1538942433059" duration="1778000" />
+      <workItem from="1538944267285" duration="1782000" />
+      <workItem from="1538946091112" duration="1779000" />
+      <workItem from="1538947911828" duration="1779000" />
+      <workItem from="1538949733911" duration="1788000" />
+      <workItem from="1538951578006" duration="1781000" />
+      <workItem from="1538953418224" duration="1783000" />
+      <workItem from="1538955258749" duration="1783000" />
+      <workItem from="1538957100535" duration="1779000" />
+      <workItem from="1538958927096" duration="1781000" />
+      <workItem from="1538960760625" duration="1371000" />
+      <workItem from="1538976825268" duration="840000" />
+      <workItem from="1538980347906" duration="571000" />
+      <workItem from="1538981896491" duration="1746000" />
+      <workItem from="1538983695123" duration="1781000" />
+      <workItem from="1538985516767" duration="1317000" />
+      <workItem from="1538994200020" duration="1741000" />
+      <workItem from="1538996002691" duration="1779000" />
+      <workItem from="1538997863678" duration="615000" />
+      <workItem from="1539003112200" duration="1741000" />
+      <workItem from="1539005712785" duration="1772000" />
+      <workItem from="1539007535225" duration="1780000" />
+      <workItem from="1539009365848" duration="1782000" />
+      <workItem from="1539011190450" duration="1780000" />
+      <workItem from="1539013013213" duration="1326000" />
+      <workItem from="1539016500989" duration="1795000" />
+      <workItem from="1539018416206" duration="1775000" />
+      <workItem from="1539020238641" duration="1781000" />
+      <workItem from="1539022118128" duration="1778000" />
+      <workItem from="1539023946317" duration="1780000" />
+      <workItem from="1539025778973" duration="1779000" />
+      <workItem from="1539027614484" duration="1778000" />
+      <workItem from="1539029436351" duration="611000" />
+      <workItem from="1539062911262" duration="1784000" />
+      <workItem from="1539064742267" duration="1788000" />
+      <workItem from="1539066592116" duration="1444000" />
+      <workItem from="1539070754215" duration="999000" />
+      <workItem from="1539235710175" duration="300000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="106069000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.33509833" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4697428" weight="0.17868853" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.53025717" side_tool="true" weight="0.17868853" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/models/ContactForm.php" />
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/vendor/myclabs/deep-copy/src/DeepCopy/deep_copy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/config/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/models/LoginForm.php" />
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/controllers/AuthController.php" />
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/config/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/controllers/TagController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/tag/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/post/_search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/vendor/yiisoft/yii2/BaseYii.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="130" column="27" selection-start-line="130" selection-start-column="27" selection-end-line="130" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/post/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/site/SortNew.php" />
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/post/tag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/post/image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="74" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/models/Signup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/site/authors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/site/myposts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="24" selection-start-line="16" selection-start-column="19" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/site/FilterCategories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="43" selection-start-line="30" selection-start-column="8" selection-end-line="36" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/site/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/site/signup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/site/SortPopular.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/models/PostSearch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/models/ImageUpload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/models/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/web/function.php" />
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/Likes.php" />
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/models/function.php" />
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/web/funct.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/models/CommentSearch.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/post/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/comment/update.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/post/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/comment/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/composer.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="98" column="6" lean-forward="true" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/models/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/comment/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/controllers/CommentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/comment/view.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/post/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/models/Tag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/models/Likes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#30#38#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/views/post/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="88" column="32" lean-forward="true" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
+          <folding>
+            <element signature="e#7#28#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/controllers/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+          <folding>
+            <element signature="e#35#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii2-app-basic/models/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

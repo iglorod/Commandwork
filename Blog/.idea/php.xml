@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/codeception/specify" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/codeception/stub" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/codeception/verify" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/codeception/base" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/behat/gherkin" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpspec/php-diff" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/bower-asset/yii2-pjax" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/bower-asset/typeahead.js" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/yiisoft/yii2" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/bower-asset/punycode" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/cebe/markdown" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/yiisoft/yii2-bootstrap" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/yiisoft/yii2-faker" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/bower-asset/jquery" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/yiisoft/yii2-composer" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/yiisoft/yii2-debug" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/bower-asset/inputmask" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/yiisoft/yii2-gii" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/yiisoft/yii2-swiftmailer" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/bower-asset/bootstrap" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/composer" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/codeception/phpunit-wrapper" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/yii2-app-basic/vendor/phar-io/manifest" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="5.4.0" />
+</project>
