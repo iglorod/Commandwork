@@ -1,6 +1,9 @@
 .center-block{
 	display: inline-flex;
-	margin-right: 32%;
+	margin-right: 30%;
+}
+.center-block1{
+ display: flex;
 }
 h1 > .badge{
     font-size: 50px;
