@@ -9,8 +9,8 @@ use yii\helpers\Html;
     <div class="row">
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 col-xl-2-offset-0">
             <div class="btn-group btn-group-justified">
-                <?= Html::a('Новинки', ['site/index'], ['class' => 'btn btn-danger btn-sm ']) ?>
-                <?= Html::a('Популярні', ['site/sort-popular'], ['class' => 'btn btn-danger btn-sm']) ?>
+                <?= Html::a('Новинки', ['site/index'], ['class' => 'btn btn-default btn-sm ']) ?>
+                <?= Html::a('Популярні', ['site/sort-popular'], ['class' => 'btn btn-default btn-sm']) ?>
             </div>
         </div>
     </div>
