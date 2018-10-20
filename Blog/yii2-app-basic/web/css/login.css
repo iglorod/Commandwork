@@ -1,0 +1,17 @@
+.center-block{
+	display: inline-flex;
+	margin-right: 30%;
+}
+.center-block1{
+ display: flex;
+}
+h1 > .badge{
+    font-size: 50px;
+
+}
+.Input-head > h5 {
+    position: absolute;
+    width: 200px;
+    top: 40px;
+    left: 90px;
+}
