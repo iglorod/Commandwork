@@ -1,0 +1,90 @@
+.m-0 {
+    margin: 0;
+}
+
+.p-0 {
+    padding: 0;
+}
+.m-1{
+    padding: 10px;
+}
+.p-3{
+    padding: 30px;
+}
+
+.zero {
+    padding: 0;
+    margin: 0;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.postImg {
+    width: 100%;
+    min-height: 300px;
+    background: no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.postThumbnail {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.userImg {
+    background: rgba(0, 0, 0, .4);
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+
+.postTitle {
+    padding: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.postTitle a:hover {
+    text-decoration: none;
+}
+
+.postSecondaryText {
+    padding: 5px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .5);
+}
+
+.postFooter {
+    padding: 10px !important;
+    display: flex;
+    align-items: center;
+    /*background: red;*/
+}
+.postDate{
+    float:right;
+    padding: 0 10px 0 10px;
+}
+
+.postCountView{
+    font-size: 30px;
+}
+
+.categoryLink{
+    display: block;
+    text-decoration: none;
+    color:black;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+@media all and (max-width: 1530px){
+
+}
+
+
+
