@@ -12,6 +12,8 @@ use yii\widgets\ActiveForm;
 <?php
 $form=ActiveForm::begin();
 ?>
+
+
 <div class="center-block">
 	<div class="container">
 		<div class="row">
@@ -28,6 +30,10 @@ $form=ActiveForm::begin();
 				<?=
 				$form->field($model,'password')->passwordInput(['class'=>'form-control']);
 				?>
+                <?php
+                $banned=$this->params['banned'];
+                echo "<span class='banned-message'>$banned</span>";
+                ?>
 				<div>
 					<button type="submit" class="btn btn-primary btn-lg">Sign in</button>
 					<span class="help-block">Click here if you still doesn't register.</span>

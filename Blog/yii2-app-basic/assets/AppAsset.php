@@ -22,6 +22,7 @@ class AppAsset extends AssetBundle
     public $css = [
         'css/site.css',
         'css/TrafalMar_design.css',
+        'css/Apofix.css',
     ];
     public $js = [
     ];
