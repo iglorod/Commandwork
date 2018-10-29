@@ -87,7 +87,7 @@ class SiteController extends Controller
         if (isset($_POST['Login'])) {
             $model->attributes = Yii::$app->request->post('Login');
             if ($model->validate()) {
-                if(Yii::$app->user->identity->banstatus===0)
+                if($model->getUser()->banstatus===0)
                 {
 
                     Yii::$app->user->login($model->getUser());
