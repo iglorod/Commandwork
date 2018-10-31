@@ -1,52 +1,67 @@
 <?php
 
 namespace app\models;
-
-use Yii;
-use yii\db\ActiveRecord;
 use yii\web\IdentityInterface;
+use Yii;
 
-class User extends ActiveRecord implements IdentityInterface
+/**
+ * This is the model class for table "user".
+ *
+ * @property int $id
+ * @property string $login
+ * @property string $password
+ * @property string $email
+ * @property int $admin
+ * @property int $banstatus
+ *
+ * @property Comment[] $comments
+ * @property Likepost[] $likeposts
+ * @property Likes[] $likes
+ * @property Post[] $posts
+ */
+class User extends \yii\db\ActiveRecord implements IdentityInterface
 {
-
     public static function findIdentity($id)
     {
-        return self::findOne($id);
+        return static::findOne($id);
     }
 
     public static function findIdentityByAccessToken($token, $type = null)
     {
+        return static::findOne(['access_token' => $token]);
     }
-
 
     public function getId()
     {
         return $this->id;
     }
 
-
     public function getAuthKey()
     {
+        return $this->authKey;
     }
-
 
     public function validateAuthKey($authKey)
     {
+        return $this->authKey === $authKey;
     }
-
+    /**
+     * {@inheritdoc}
+     */
     public static function tableName()
     {
         return 'user';
     }
 
-
+    /**
+     * {@inheritdoc}
+     */
     public function rules()
     {
         return [
-            [['login', 'password', 'email'], 'required'],
-            [['admin'], 'integer'],
-            [['login', 'password'], 'string', 'max' => 512],
-            ['email','email'],
+            [['login', 'password', 'email', 'banstatus'], 'required'],
+            [['admin', 'banstatus'], 'integer'],
+            [['login', 'password', 'email'], 'string', 'max' => 512],
         ];
     }
 
@@ -61,6 +76,7 @@ class User extends ActiveRecord implements IdentityInterface
             'password' => 'Password',
             'email' => 'Email',
             'admin' => 'Admin',
+            'banstatus' => 'Banstatus',
         ];
     }
 
@@ -70,6 +86,22 @@ class User extends ActiveRecord implements IdentityInterface
     public function getComments()
     {
         return $this->hasMany(Comment::className(), ['id_author' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getLikeposts()
+    {
+        return $this->hasMany(Likepost::className(), ['id_user' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getLikes()
+    {
+        return $this->hasMany(Likes::className(), ['id_user' => 'id']);
     }
 
     /**

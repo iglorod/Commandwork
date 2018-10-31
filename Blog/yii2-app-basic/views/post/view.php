@@ -104,6 +104,7 @@ $this->params['breadcrumbs'][] = $this->title;
         $(".comments").click(function(){
             var b=document.getElementById('com_cont');
             var contant=b.value;
+            if(b.value=='')return;
             b.value='';
             var id_post = {
                 'id':$(this).attr('id_post'),

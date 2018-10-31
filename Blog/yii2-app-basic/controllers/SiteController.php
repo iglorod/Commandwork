@@ -9,6 +9,7 @@ use yii\web\Controller;
 use app\models\Signup;
 use app\models\Login;
 
+
 class SiteController extends Controller
 {
 
@@ -81,13 +82,22 @@ class SiteController extends Controller
         if(!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
+
         $model = new Login();
         if (isset($_POST['Login'])) {
             $model->attributes = Yii::$app->request->post('Login');
-
             if ($model->validate()) {
-                Yii::$app->user->login($model->getUser());
-                return $this->goHome();
+                if($model->getUser()->banstatus===0)
+                {
+
+                    Yii::$app->user->login($model->getUser());
+                return $this->goHome(); 
+                }
+                else
+                {
+                    $this->view->params['banned'] = "Ви забанені";
+                    return $this->render('login', ['model' => $model]);
+                }
             }
         }
         return $this->render('login', ['model' => $model]);

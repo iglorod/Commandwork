@@ -52,7 +52,7 @@ AppAsset::register($this);
             'options' => ['class' => 'navbar-nav navbar-right'],
             'items' => [
                 ['label' => 'Main', 'url' => ['/site/index']],
-                ['label' => 'Users', 'url' => ['/site/users']],
+                ['label' => 'Users', 'url' => ['/user/index']],
                 ['label' => 'Categories', 'url' => ['/tag/index']],
                 ['label' => 'Authors', 'url' => ['/site/authors']],
                     '<li>'

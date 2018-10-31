@@ -22,7 +22,7 @@ class Login extends Model
 
         if(!user || $user->password!=$this->password){
             $this->addError($attribute,'Пароль або email вказано невірно..');
-        }
+        }   
     }
 
     public function getUser(){
